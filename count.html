@@ -217,15 +217,78 @@
           <h2 class="text-in-block">нашего оборудования</h2>
           <hr>
 
-            <form id="calc-form">
-              <input type="text" name="name" placeholder="Ваше имя" required>
-              <input type="email" name="email" placeholder="Email" required>
-              <input type="tel" name="phone" placeholder="Телефон" required>
-              <input type="text" name="product" placeholder="Тип оборудования" required>
-              <textarea name="comment" placeholder="Комментарий или пожелания"></textarea>
+            <form id="calcForm" method="POST">
+              <h2>Форма расчета</h2>
+            
+              <label>ФИО*<br>
+                <input type="text" name="full_name" required>
+              </label><br>
+            
+              <label>Email*<br>
+                <input type="email" name="email" required>
+              </label><br>
+            
+              <label>Адрес*<br>
+                <input type="text" name="address" required>
+              </label><br>
+            
+              <label>Телефон*<br>
+                <input type="tel" name="phone" required>
+              </label><br>
+            
+              <label>Принадлежность объекта*<br>
+                <input type="text" name="object_type" required>
+              </label><br>
+            
+              <label>Продолжительность отопительного периода (в днях)*<br>
+                <input type="text" name="heating_duration" required>
+              </label><br>
+            
+              <label>Количество этажей (включая подвал, мансарду)*<br>
+                <input type="number" name="floors" required>
+              </label><br>
+            
+              <label>Высота потолков (в м)*<br>
+                <input type="number" name="ceiling_height" required>
+              </label><br>
+            
+              <label>Отапливаемая площадь (м²)<br>
+                <input type="number" name="heated_area">
+              </label><br>
+            
+              <label>Отапливаемый объем здания (м³)<br>
+                <input type="number" name="heated_volume">
+              </label><br>
+            
+              <label>Средняя температура внутри помещений (°C)<br>
+                <input type="number" name="average_temperature">
+              </label><br>
+            
+              <label>Нужна ли горячая вода?<br>
+                <select name="need_hot_water">
+                  <option value="true">Да</option>
+                  <option value="false">Нет</option>
+                </select>
+              </label><br>
+            
+              <label>Количество жильцов / работников<br>
+                <input type="number" name="people_count">
+              </label><br>
+            
+              <label>Стоимость 1 кВт·ч (руб.)<br>
+                <input type="number" name="electricity_cost" step="0.01">
+              </label><br>
+            
+              <label>Располагаемая мощность по электроэнергии (кВт)<br>
+                <input type="number" name="power_capacity">
+              </label><br>
+            
+              <label>Комментарии<br>
+                <textarea name="comments"></textarea>
+              </label><br>
+            
               <button type="submit">Отправить</button>
-              <div id="result" style="margin-top:10px;color:green;"></div>
-           </form>
+            </form>
         </div>
       </div>
      
