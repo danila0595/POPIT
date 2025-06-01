@@ -1,0 +1,44 @@
+.counters {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0 100px 0;
+    box-sizing: border-box;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 100px;
+    text-align: center;
+  }
+  .number {
+    overflow-wrap: break-word;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.43;
+    color: var(--blue);
+    display: inline-block;
+  }
+
+  .not_number {
+    overflow-wrap: break-word;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.43;
+    color: var(--blue);
+    display: inline-block;
+  }
+  .number-signature {
+    overflow-wrap: break-word;
+    font-family: var(--21-px-regular-font-family, 'Montserrat');
+    font-weight: var(--21-px-regular-font-weight, 400);
+    font-size: var(--21-px-regular-font-size, 21px);
+    letter-spacing: var(--21-px-regular-letter-spacing, -0.2px);
+    line-height: var(--21-px-regular-line-height, 1.43);
+    color: var(--1, #2E363E);
+  }
